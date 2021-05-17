@@ -26,4 +26,8 @@ document.onkeydown = function(e) {
     if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
      return false;
     }      
- }
+}
+
+$(document).bind("contextmenu",function(e){
+  return false;
+});
